@@ -1,0 +1,5 @@
+<launch>
+  <node pkg="robin" type="robot.py" name="robot"/>
+  <node pkg="robin" type="teleop.py" name="teleop"/>
+
+</launch>
