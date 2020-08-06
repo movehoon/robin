@@ -8,9 +8,9 @@ def joystick(joy):
     twist = Twist()
     twist.linear.x = joy.axes[1]*0.5
     twist.linear.y = joy.axes[0]*0.5
-    if joy.buttons[4] == 1:
+    if joy.buttons[6] == 1:
         twist.angular.z = 0.3
-    elif joy.buttons[5] == 1:
+    elif joy.buttons[7] == 1:
         twist.angular.z = -0.3
     pub.publish(twist)
 
